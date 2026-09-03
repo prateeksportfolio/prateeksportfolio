@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Let's Work Together | Prateek Sharma</title>
+  <meta name="description" content="Tell Prateek Sharma about your digital growth challenge, SEO project, search strategy, or AI-powered search requirement.">
+  <meta name="author" content="Prateek Sharma">
+  <meta property="og:title" content="Let's Work Together | Prateek Sharma">
+  <meta property="og:description" content="Start a conversation about SEO, digital marketing, search visibility, and AI-powered search.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#f8f9f4;
+      --surface:#ffffff;
+      --ink:#10161c;
+      --muted:#64707a;
+      --line:#dfe4dc;
+      --lime:#c7ff3d;
+      --pale:#eff8d9;
+      --dark:#10161c;
+      --dark-2:#171e24;
+      --max:1180px;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+
+    html{scroll-behavior:smooth}
+
+    body{
+      font-family:Inter,system-ui,sans-serif;
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.6;
+    }
+
+    a{color:inherit;text-decoration:none}
+
+    .wrap{
+      width:min(var(--max),calc(100% - 40px));
+      margin:auto;
+    }
+
+    .nav{
+      position:sticky;
+      top:0;
+      z-index:20;
+      background:rgba(248,249,244,.92);
+      backdrop-filter:blur(16px);
+      border-bottom:1px solid var(--line);
+    }
+
+    .nav-inner{
+      height:74px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    .brand{
+      font-weight:800;
+      letter-spacing:-.04em;
+    }
+
+    .brand span{
+      display:inline-block;
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      background:var(--lime);
+      margin-left:5px;
+    }
+
+    .back{
+      font-size:.85rem;
+      font-weight:700;
+      transition:.2s;
+    }
+
+    .back:hover{transform:translateX(-3px)}
+
+    .hero{
+      padding:82px 0 58px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .hero:before{
+      content:"";
+      position:absolute;
+      width:520px;
+      height:520px;
+      border-radius:50%;
+      background:rgba(199,255,61,.10);
+      filter:blur(70px);
+      right:-180px;
+      top:-240px;
+      pointer-events:none;
+    }
+
+    .eyebrow{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-size:.72rem;
+      letter-spacing:.16em;
+      font-weight:800;
+      color:#69747b;
+      margin-bottom:20px;
+    }
+
+    .eyebrow:after{
+      content:"";
+      width:42px;
+      height:3px;
+      border-radius:5px;
+      background:var(--lime);
+    }
+
+    h1{
+      font-size:clamp(3.15rem,7vw,6.25rem);
+      line-height:.94;
+      letter-spacing:-.075em;
+      max-width:900px;
+    }
+
+    h1 .accent{
+      font-family:"DM Serif Display",Georgia,serif;
+      font-style:italic;
+      font-weight:400;
+      color:#7e9f13;
+      letter-spacing:-.045em;
+      white-space:nowrap;
+      position:relative;
+    }
+
+    h1 .accent:after{
+      content:"";
+      position:absolute;
+      left:2%;
+      right:2%;
+      bottom:-2px;
+      height:9px;
+      background:var(--lime);
+      border-radius:50%;
+      z-index:-1;
+      transform:rotate(-1.5deg);
+      opacity:.9;
+    }
+
+    .lead{
+      color:var(--muted);
+      font-size:1.05rem;
+      max-width:680px;
+      margin-top:24px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:.72fr 1.28fr;
+      gap:55px;
+      align-items:start;
+      padding-bottom:100px;
+    }
+
+    .info{
+      position:sticky;
+      top:105px;
+    }
+
+    .info-card{
+      background:var(--dark);
+      color:#fff;
+      border-radius:26px;
+      padding:30px;
+      box-shadow:0 24px 60px rgba(16,22,28,.10);
+      overflow:hidden;
+      position:relative;
+    }
+
+    .info-card:after{
+      content:"";
+      position:absolute;
+      width:170px;
+      height:170px;
+      border-radius:50%;
+      background:rgba(199,255,61,.07);
+      right:-90px;
+      bottom:-90px;
+    }
+
+    .info-icon{
+      width:48px;
+      height:48px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border:1px solid rgba(199,255,61,.55);
+      color:var(--lime);
+      border-radius:50%;
+      font-size:1.2rem;
+      margin-bottom:22px;
+    }
+
+    .info-card h2{
+      font-size:1.4rem;
+      letter-spacing:-.04em;
+      margin-bottom:12px;
+    }
+
+    .info-card>p{
+      color:#b9c1c5;
+      font-size:.88rem;
+      max-width:330px;
+    }
+
+    .contact-item{
+      border-top:1px solid #30383e;
+      padding-top:17px;
+      margin-top:22px;
+      font-size:.82rem;
+      position:relative;
+      z-index:2;
+    }
+
+    .contact-item strong{
+      display:block;
+      color:var(--lime);
+      font-size:.72rem;
+      letter-spacing:.08em;
+      margin-bottom:5px;
+    }
+
+    .contact-item a:hover{color:var(--lime)}
+
+    .form-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:30px;
+      padding:32px;
+      box-shadow:0 22px 65px rgba(16,22,28,.07);
+    }
+
+    .success{
+      display:none;
+      padding:25px;
+      border:1px solid #d7e9b6;
+      background:var(--pale);
+      border-radius:20px;
+      margin-bottom:20px;
+    }
+
+    .success-icon{
+      width:46px;
+      height:46px;
+      border-radius:50%;
+      background:var(--lime);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:1.35rem;
+      font-weight:800;
+      margin-bottom:16px;
+    }
+
+    .success h2{
+      font-size:1.4rem;
+      letter-spacing:-.035em;
+    }
+
+    .success p{
+      margin-top:8px;
+      color:#59636a;
+    }
+
+    form{
+      display:grid;
+      gap:20px;
+    }
+
+    .row{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:16px;
+    }
+
+    label{
+      display:block;
+      font-size:.78rem;
+      font-weight:800;
+      margin-bottom:7px;
+    }
+
+    input,select,textarea{
+      width:100%;
+      font:inherit;
+      font-size:.9rem;
+      border:1px solid #cfd6ce;
+      border-radius:13px;
+      background:#fbfcf9;
+      padding:13px 14px;
+      outline:none;
+      transition:.2s;
+    }
+
+    input:focus,select:focus,textarea:focus{
+      border-color:var(--ink);
+      box-shadow:0 0 0 3px rgba(199,255,61,.25);
+      background:#fff;
+    }
+
+    textarea{
+      min-height:155px;
+      resize:vertical;
+    }
+
+    .hint{
+      font-size:.73rem;
+      color:var(--muted);
+      margin-top:5px;
+    }
+
+    .check{
+      display:flex;
+      gap:9px;
+      align-items:flex-start;
+      font-size:.76rem;
+      color:var(--muted);
+    }
+
+    .check input{
+      width:auto;
+      margin-top:4px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      border:1px solid var(--dark);
+      border-radius:999px;
+      padding:13px 20px;
+      font-weight:800;
+      font-size:.86rem;
+      background:var(--dark);
+      color:#fff;
+      cursor:pointer;
+      transition:.2s;
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+      box-shadow:0 10px 25px rgba(16,22,28,.13);
+    }
+
+    .btn:disabled{
+      opacity:.65;
+      cursor:not-allowed;
+      transform:none;
+    }
+
+    .success .btn{
+      margin-top:20px;
+    }
+
+    footer{
+      background:var(--dark);
+      color:#fff;
+      padding:34px 0;
+    }
+
+    .foot{
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+    }
+
+    small{color:#aeb7bc}
+
+    @media(max-width:800px){
+      .grid{grid-template-columns:1fr}
+      .info{position:static}
+      .row{grid-template-columns:1fr}
+      .hero{padding-top:60px}
+    }
+
+    @media(max-width:520px){
+      .wrap{width:calc(100% - 28px)}
+      .hero{padding:50px 0 35px}
+      .form-card{padding:22px}
+      .info-card{padding:24px}
+      h1{font-size:3.25rem}
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">Prateek Sharma<span></span></a>
+      <a class="back" href="index.html">← Back to portfolio</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">LET'S WORK TOGETHER</div>
+
+        <h1>
+          Tell me what you're trying to
+          <span class="accent">improve.</span>
+        </h1>
+
+        <p class="lead">
+          Share a little about your business, website, or digital growth challenge.
+          I'll use the details to understand where SEO, content, search advertising,
+          or AI-powered search strategy could help.
+        </p>
+      </div>
+    </section>
+
+    <section class="wrap grid">
+
+      <aside class="info">
+        <div class="info-card">
+
+          <div class="info-icon">↗</div>
+
+          <h2>Start the conversation.</h2>
+
+          <p>
+            No complicated brief required. A few useful details are enough
+            to get the conversation moving.
+          </p>
+
+          <div class="contact-item">
+            <strong>EMAIL</strong>
+            <a href="mailto:prateeksdigitalhub@gmail.com">
+              prateeksdigitalhub@gmail.com
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <strong>LINKEDIN</strong>
+            <a href="https://www.linkedin.com/in/prateek-sharma-bb6683196/" target="_blank" rel="noopener">
+              Connect on LinkedIn →
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <strong>FOCUS AREAS</strong>
+            SEO · AEO · GEO · AI Search · Content · Search Advertising
+          </div>
+
+        </div>
+      </aside>
+
+      <div class="form-card">
+
+        <div id="success" class="success">
+          <div class="success-icon">✓</div>
+
+          <h2>Thanks — your enquiry is in.</h2>
+
+          <p>
+            I’ve received your message and the details you shared.
+            I’ll review it and get back to you as soon as possible.
+          </p>
+
+          <a class="btn" href="index.html">← Back to portfolio</a>
+        </div>
+
+        <form
+          name="portfolio-contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
+
+          <input type="hidden" name="form-name" value="portfolio-contact">
+
+          <p style="display:none">
+            <label>
+              Don't fill this out:
+              <input name="bot-field">
+            </label>
+          </p>
+
+          <div class="row">
+            <div>
+              <label for="name">Your name *</label>
+              <input id="name" name="name" type="text" placeholder="e.g. Rahul Sharma" required>
+            </div>
+
+            <div>
+              <label for="email">Email *</label>
+              <input id="email" name="email" type="email" placeholder="you@company.com" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label for="company">Company / Brand</label>
+              <input id="company" name="company" type="text" placeholder="Your company">
+            </div>
+
+            <div>
+              <label for="website">Website</label>
+              <input id="website" name="website" type="url" placeholder="https://example.com">
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label for="service">What can I help with? *</label>
+              <select id="service" name="service" required>
+                <option value="" selected disabled>Select a service</option>
+                <option>SEO</option>
+                <option>AEO / AI Search</option>
+                <option>GEO</option>
+                <option>Content Strategy</option>
+                <option>Search Advertising</option>
+                <option>Digital Marketing Strategy</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="budget">Approx. budget</label>
+              <select id="budget" name="budget">
+                <option value="" selected>Prefer to discuss</option>
+                <option>Under ₹10,000</option>
+                <option>₹10,000–₹25,000</option>
+                <option>₹25,000–₹50,000</option>
+                <option>₹50,000+</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="message">Tell me about the challenge *</label>
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="What are you trying to improve? What have you tried so far? What would a good outcome look like?"
+              required
+            ></textarea>
+
+            <div class="hint">
+              The more context you share, the easier it is to understand the problem.
+            </div>
+          </div>
+
+          <label class="check">
+            <input type="checkbox" name="consent" value="yes" required>
+            <span>I agree to be contacted about this enquiry.</span>
+          </label>
+
+          <button class="btn" type="submit">Send Enquiry →</button>
+
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <strong>Prateek Sharma</strong><br>
+        <small>Digital Marketer | SEO | AEO | GEO | AI-Powered Search</small>
+      </div>
+
+      <small>© 2026 Prateek Sharma</small>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.querySelector('form[name="portfolio-contact"]');
+    const success = document.getElementById('success');
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const button = form.querySelector('button[type="submit"]');
+
+      button.disabled = true;
+      button.textContent = 'Sending…';
+
+      const formData = new FormData(form);
+      const encoded = new URLSearchParams();
+
+      for (const [key, value] of formData.entries()) {
+        encoded.append(key, value);
+      }
+
+      try {
+        const response = await fetch('/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          },
+          body: encoded.toString()
+        });
+
+        if (!response.ok) {
+          throw new Error('Submission failed');
+        }
+
+        form.style.display = 'none';
+        success.style.display = 'block';
+
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+
+      } catch (error) {
+        button.disabled = false;
+        button.textContent = 'Send Enquiry →';
+
+        alert('Something went wrong while sending your enquiry. Please try again.');
+      }
+    });
+  </script>
+
+</body>
+</html>
