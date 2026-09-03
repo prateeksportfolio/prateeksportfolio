@@ -373,5 +373,10 @@
       nav.style.borderBottom='1px solid var(--line)';
     });
   </script>
+  <script>
+  if (window.location.hash.startsWith('#recovery_token=')) {
+    window.location.replace('/admin/' + window.location.hash);
+  }
+</script>
 </body>
 </html>
