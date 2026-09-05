@@ -1,40 +1,383 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Blog | Prateek Sharma — SEO, AEO, GEO & AI Search</title>
-<meta name="description" content="Practical guides and insights on SEO, AEO, GEO, AI-powered search, content strategy and digital marketing by Prateek Sharma.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#f8f9f4;--white:#fff;--ink:#10161c;--muted:#64707a;--line:#dfe4dc;--lime:#c7ff3d;--pale:#eff8d9;--dark:#10161c;--max:1180px}
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}a{text-decoration:none;color:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
-.nav{position:sticky;top:0;z-index:10;background:rgba(248,249,244,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.navin{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:-.04em}.brand i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--lime);margin-left:5px}.brand small{display:block;font-size:7px;letter-spacing:.16em;color:#7b858a}.links{display:flex;gap:25px;font-size:14px;color:#4f5961}.links a:hover{color:var(--ink)}.cta{background:var(--ink);color:#fff;padding:12px 18px;border-radius:999px;font-size:14px;font-weight:700}
-.hero{padding:105px 0 75px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:600px;height:600px;right:-250px;top:-250px;border-radius:50%;background:radial-gradient(circle,rgba(199,255,61,.25),transparent 68%)}.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:end;position:relative}.eyebrow,.cat{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 12px;font-size:11px;font-weight:800;letter-spacing:.1em}.eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--lime)}h1{font-size:clamp(3.4rem,7vw,6.5rem);line-height:.91;letter-spacing:-.075em;margin-top:24px}h1 em{font-family:"DM Serif Display",serif;font-weight:400;font-style:italic}.lead{color:var(--muted);font-size:17px;max-width:650px;margin-top:28px}.note{border-left:2px solid var(--lime);padding-left:20px;color:#4f5961;font-size:14px;max-width:350px}
-.filters{padding-bottom:40px}.filterbar{display:flex;gap:9px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:24px}.filter{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px;font:700 12px Inter;cursor:pointer}.filter.active,.filter:hover{background:var(--ink);color:#fff}.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:25px 0 120px}.post{background:#fff;border:1px solid var(--line);border-radius:26px;overflow:hidden;display:flex;flex-direction:column;transition:.25s}.post:hover{transform:translateY(-5px);box-shadow:0 20px 45px rgba(16,22,28,.08)}.pic{height:190px;background:radial-gradient(circle at 80% 20%,rgba(199,255,61,.55),transparent 28%),linear-gradient(145deg,#f5f7f0,#e8ede3);display:flex;align-items:flex-end;padding:20px}.cat{background:var(--dark);color:#fff;border:0;font-size:10px}.body{padding:25px;display:flex;flex-direction:column;flex:1}.date{font-size:11px;color:#89938b;font-weight:700;margin-bottom:12px}.post h2{font-size:21px;line-height:1.12;letter-spacing:-.035em}.excerpt{font-size:13px;color:var(--muted);margin-top:12px}.read{margin-top:auto;padding-top:20px;font-size:12px;font-weight:800}.state{grid-column:1/-1;border:1px dashed #cbd3c7;border-radius:26px;padding:65px 25px;text-align:center}.state p{color:var(--muted);font-size:13px;margin-top:8px}
-.bottom{background:var(--lime);padding:90px 20px;text-align:center}.bottom h2{font-size:clamp(2.7rem,6vw,5rem);line-height:.95;letter-spacing:-.07em;max-width:850px;margin:auto}.bottom p{color:#39420f;margin:20px auto;max-width:600px}.bottom a{display:inline-block;background:var(--dark);color:#fff;padding:13px 21px;border-radius:999px;font-size:13px;font-weight:800}footer{background:var(--dark);color:#fff;padding:38px 0}.foot{display:flex;justify-content:space-between;gap:20px}.foot small{color:#aeb7bc}.social{display:flex;gap:17px;font-size:12px;color:#cbd1d4}
-@media(max-width:900px){.grid{grid-template-columns:1fr}.links{display:none}.posts{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.wrap{width:calc(100% - 28px)}.hero{padding:60px 0}.posts{grid-template-columns:1fr}.foot{display:block}.social{margin-top:15px;flex-wrap:wrap}}
-</style>
+  <meta name="google-site-verification" content="5_XdUm2R7I6Ir3JbPcaIorAZapUHGYBID9jhReK5Hq8" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prateek Sharma | Digital Marketer, SEO, AEO & GEO Specialist</title>
+  <meta name="description" content="Prateek Sharma is a Digital Marketing professional specializing in SEO, AEO, GEO, AI-powered search, content strategy, and search advertising. Explore his projects, certifications, and digital marketing work." />
+  <meta name="author" content="Prateek Sharma" />
+  <meta property="og:title" content="Prateek Sharma | Digital Marketer, SEO, AEO & GEO Specialist" />
+  <meta property="og:description" content="Digital marketer focused on SEO, AEO, GEO, AI-powered search, content strategy, and performance-driven marketing." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#f7f8f2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#f8f9f4; --surface:#fff; --ink:#10161c; --muted:#64707a;
+      --line:#dfe4dc; --lime:#c7ff3d; --pale:#eff8d9; --dark:#10161c;
+      --radius:22px; --max:1180px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .nav{position:sticky;top:0;z-index:50;background:rgba(248,249,244,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(223,228,220,.8)}
+    .nav-inner{height:74px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:800;letter-spacing:-.04em;font-size:1.05rem}
+    .brand span{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--lime);margin-left:5px}
+    .links{display:flex;gap:27px;font-size:.88rem;color:#4f5961}
+    .links a{transition:.2s}.links a:hover,.links a.active{color:var(--ink)}
+    .nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 18px;font-weight:700;font-size:.88rem;transition:.25s;border:1px solid var(--ink)}
+    .nav-cta{background:var(--ink);color:#fff}.nav-cta:hover{transform:translateY(-2px)}
+    .menu{display:none;background:none;border:0;font-size:1.5rem}
+    section{padding:100px 0}
+    .hero{padding:90px 0 75px;min-height:calc(100vh - 74px);display:flex;align-items:center}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:65px;align-items:center}
+    .eyebrow{font-size:.76rem;letter-spacing:.16em;font-weight:800;color:#59636a;margin-bottom:22px}
+    h1{font-size:clamp(3.2rem,7vw,6.6rem);line-height:.93;letter-spacing:-.075em;max-width:850px}
+    h1 em{font-style:normal;text-decoration:underline;text-decoration-color:var(--lime);text-decoration-thickness:12px;text-underline-offset:3px}
+    .lead{font-size:1.12rem;color:var(--muted);max-width:670px;margin:28px 0 30px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn.primary{background:var(--ink);color:white}.btn.secondary{background:transparent}
+    .btn:hover{transform:translateY(-3px)}
+    .status{display:inline-flex;align-items:center;gap:9px;margin-top:27px;font-size:.82rem;font-weight:700}
+    .dot{width:9px;height:9px;background:var(--lime);border-radius:50%;box-shadow:0 0 0 5px rgba(199,255,61,.18)}
+    .search-art{min-height:510px;border:1px solid var(--line);border-radius:34px;background:#fff;position:relative;overflow:hidden;box-shadow:0 25px 70px rgba(16,22,28,.07)}
+    .search-art:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(199,255,61,.22),transparent 35%,rgba(239,248,217,.65));}
+    .orb{position:absolute;width:250px;height:250px;border-radius:50%;background:var(--lime);filter:blur(1px);right:-65px;top:-55px;opacity:.8}
+    .search-box{position:absolute;left:10%;right:10%;top:17%;height:64px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.9);display:flex;align-items:center;padding:0 20px;gap:13px;box-shadow:0 12px 30px rgba(16,22,28,.06)}
+    .search-icon{width:18px;height:18px;border:2px solid var(--ink);border-radius:50%;position:relative}.search-icon:after{content:"";width:7px;height:2px;background:var(--ink);position:absolute;right:-5px;bottom:-2px;transform:rotate(45deg)}
+    .search-text{font-size:.9rem;color:#7a848b}.search-text b{color:var(--ink)}
+    .rank{position:absolute;left:10%;top:38%;background:var(--dark);color:white;border-radius:20px;padding:20px;width:45%;transform:rotate(-3deg);box-shadow:0 18px 40px rgba(16,22,28,.16)}
+    .rank small{color:#aeb6bb}.rank strong{font-size:2.6rem;display:block;letter-spacing:-.06em}.rank-bar{height:7px;background:#394149;border-radius:20px;overflow:hidden;margin-top:12px}.rank-bar i{display:block;height:100%;width:78%;background:var(--lime);border-radius:20px}
+    .ai{position:absolute;right:9%;top:46%;width:39%;padding:17px;background:var(--pale);border:1px solid #d7e9b6;border-radius:20px}.ai b{font-size:.8rem}.ai p{font-size:.75rem;color:#66716b;margin-top:7px}
+    .chart{position:absolute;left:10%;right:10%;bottom:9%;height:120px;border-top:1px solid var(--line);display:flex;align-items:end;gap:8px;padding-top:18px}.bar{flex:1;background:#dce2d8;border-radius:6px 6px 0 0}.bar:nth-child(1){height:25%}.bar:nth-child(2){height:43%}.bar:nth-child(3){height:38%}.bar:nth-child(4){height:60%}.bar:nth-child(5){height:55%}.bar:nth-child(6){height:78%}.bar:nth-child(7){height:92%;background:var(--lime)}
+    .stats{padding:0 0 85px}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.stat{padding:30px 20px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;font-size:2rem;letter-spacing:-.06em}.stat span{font-size:.78rem;color:var(--muted)}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:48px}.kicker{font-size:.72rem;font-weight:800;letter-spacing:.15em;color:#707a80}.section-head h2{font-size:clamp(2.4rem,5vw,4.2rem);line-height:.98;letter-spacing:-.065em;max-width:720px}.section-head p{color:var(--muted);max-width:400px}
+    .about-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:60px}.about-copy{font-size:1.15rem;color:#48535b;max-width:760px}.about-copy p+p{margin-top:18px}.about-card{background:var(--dark);color:white;border-radius:var(--radius);padding:32px}.about-card .big{font-size:4rem;font-weight:800;letter-spacing:-.08em;color:var(--lime);line-height:1}.about-card p{color:#b9c1c5;font-size:.9rem;margin-top:12px}
+    .expertise{background:#f1f4eb}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;min-height:220px;transition:.25s}.card:hover,.project:hover{transform:translateY(-5px);box-shadow:0 20px 45px rgba(16,22,28,.08)}.num{font-size:.72rem;color:#89938b;font-weight:800}.card h3{font-size:1.25rem;margin:35px 0 10px}.card p{font-size:.88rem;color:var(--muted)}
+    .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.skill-group{border:1px solid var(--line);border-radius:var(--radius);padding:28px}.skill-group h3{margin-bottom:18px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{padding:8px 11px;border:1px solid var(--line);border-radius:999px;background:white;font-size:.78rem}
+    .timeline{border-left:1px solid var(--line);margin-left:8px}.timeline-item{position:relative;padding:0 0 55px 38px}.timeline-item:before{content:"";position:absolute;left:-5px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--lime);border:3px solid var(--bg)}.meta{font-size:.76rem;color:#77817f;font-weight:700}.timeline h3{font-size:1.5rem;margin:7px 0 2px}.timeline h4{font-size:.9rem}.timeline ul{margin:16px 0 0 18px;color:var(--muted);font-size:.9rem}
+    .projects{background:#10161c;color:#fff}.projects .kicker{color:#9ea8ad}.projects .section-head p{color:#aeb7bc}.project-list{display:grid;gap:16px}.project{background:#171e24;border:1px solid #2a333a;border-radius:28px;padding:32px;transition:.25s}.project-grid{display:grid;grid-template-columns:1fr .8fr;gap:40px;align-items:center}.project-num{color:var(--lime);font-weight:800;font-size:.75rem}.project h3{font-size:clamp(1.7rem,3vw,2.5rem);letter-spacing:-.05em;margin:12px 0}.project p{color:#aeb7bc;font-size:.9rem}.project ul{margin:17px 0 0 18px;color:#c4cbcf;font-size:.86rem}.project a{display:inline-block;margin-top:22px;color:var(--lime);font-weight:800;font-size:.82rem}.funnel{border:1px solid #303940;border-radius:20px;padding:20px}.funnel-step{height:38px;border-radius:8px;background:#222b31;margin:7px auto;display:flex;align-items:center;justify-content:center;font-size:.72rem;color:#cbd1d4}.funnel-step:nth-child(1){width:100%}.funnel-step:nth-child(2){width:86%}.funnel-step:nth-child(3){width:72%}.funnel-step:nth-child(4){width:58%}.funnel-step:nth-child(5){width:44%;background:var(--lime);color:var(--dark);font-weight:800}
+    .cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.cert{border:1px solid var(--line);border-radius:var(--radius);padding:30px;background:white}.verified{display:inline-flex;border:1px solid #d7e9b6;background:var(--pale);border-radius:999px;padding:7px 10px;font-size:.68rem;font-weight:800;margin-bottom:25px}.cert h3{font-size:1.35rem}.cert p{color:var(--muted);font-size:.86rem;margin-top:10px}
+    .edu{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.edu-card{padding:28px;border:1px solid var(--line);border-radius:var(--radius)}.edu-card strong{font-size:1.2rem}.edu-card .year{float:right;color:#7a848b;font-size:.8rem}
+    .pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.pillar{padding:25px 0;border-top:2px solid var(--ink)}.pillar h3{font-size:1rem;margin-bottom:8px}.pillar p{color:var(--muted);font-size:.84rem}
+    .brand-section{background:var(--pale)}.brand-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.brand-card{background:#fff;border:1px solid #dbe7c4;border-radius:var(--radius);padding:28px;min-height:190px}.brand-card h3{margin:25px 0 7px}.brand-card p{font-size:.84rem;color:var(--muted)}
+    .contact{background:var(--lime);text-align:center}.contact h2{font-size:clamp(2.7rem,6vw,5.5rem);line-height:.95;letter-spacing:-.075em;max-width:850px;margin:0 auto 25px}.contact p{max-width:650px;margin:auto;color:#39420f}.contact .actions{justify-content:center;margin-top:28px}.contact .btn.primary{background:var(--dark);border-color:var(--dark)}.contact .btn.secondary{border-color:var(--dark)}
+    footer{background:var(--dark);color:#fff;padding:38px 0}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot small{color:#aeb7bc}.social{display:flex;gap:16px;font-size:.8rem;color:#cbd1d4}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.reveal.show{opacity:1;transform:none}
+
+
+    .proof{background:#f1f4eb}
+    .proof-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:16px}
+    .proof-intro,.proof-stats{background:#fff;border:1px solid var(--line);border-radius:28px;padding:30px}
+    .proof-intro h3{font-size:1.55rem;letter-spacing:-.04em;margin:20px 0 8px}
+    .proof-intro p{font-size:.88rem;color:var(--muted);max-width:430px}
+    .proof-intro a{display:inline-block;margin-top:22px;font-size:.8rem;font-weight:800}
+    .proof-stats{display:grid;grid-template-columns:repeat(3,1fr);padding:0;overflow:hidden}
+    .proof-stats>div{padding:27px 22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .proof-stats>div:nth-child(3n){border-right:0}
+    .proof-stats>div:nth-child(n+4){border-bottom:0}
+    .proof-stats strong{display:block;font-size:2rem;letter-spacing:-.06em}
+    .proof-stats span{font-size:.72rem;color:var(--muted);line-height:1.4}
+    .proof .verified{margin-bottom:0}
+    @media(max-width:900px){.proof-grid{grid-template-columns:1fr}}
+    @media(max-width:600px){
+      .proof-stats{grid-template-columns:repeat(2,1fr)}
+      .proof-stats>div:nth-child(3n){border-right:1px solid var(--line)}
+      .proof-stats>div:nth-child(2n){border-right:0}
+      .proof-stats>div:nth-child(n+5){border-bottom:0}
+      .proof-stats>div:nth-child(4){border-bottom:1px solid var(--line)}
+    }
+
+    /* ===== PREMIUM HOMEPAGE UPGRADE ===== */
+    :root{--glow:rgba(199,255,61,.18)}
+    ::selection{background:var(--lime);color:var(--ink)}
+    body{overflow-x:hidden}
+    .nav{box-shadow:0 1px 0 rgba(16,22,28,.02)}
+    .nav-inner{height:78px}
+    .brand{font-size:1.08rem}
+    .brand:after{content:"DIGITAL MARKETING";display:block;font-size:.48rem;letter-spacing:.16em;color:#7b858a;margin-top:-1px;font-weight:700}
+    .hero{position:relative;min-height:calc(100vh - 78px);padding:105px 0 90px;isolation:isolate}
+    .hero:before{content:"";position:absolute;width:620px;height:620px;right:-250px;top:-190px;border-radius:50%;background:radial-gradient(circle,var(--glow) 0%,rgba(199,255,61,.06) 38%,transparent 70%);z-index:-2;pointer-events:none}
+    .hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(16,22,28,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(16,22,28,.035) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.42),transparent 72%);z-index:-3;pointer-events:none}
+    .hero-grid{gap:72px}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.7);margin-bottom:24px}
+    .eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(199,255,61,.16)}
+    h1{max-width:900px}
+    h1 em{position:relative;text-decoration:none;font-family:"DM Serif Display",Georgia,serif;font-style:italic;font-weight:400;letter-spacing:-.055em}
+    h1 em:after{content:"";position:absolute;left:1%;right:1%;bottom:1px;height:11px;background:var(--lime);border-radius:50%;z-index:-1;transform:rotate(-1.5deg);opacity:.88}
+    .lead{max-width:650px}
+    .actions .btn{min-height:48px;padding:13px 21px}
+    .status{padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.72)}
+    .scroll-cue{margin-top:30px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#879096;font-weight:700;display:flex;align-items:center;gap:9px}
+    .scroll-cue span{font-size:1rem;color:var(--ink)}
+    .search-art{min-height:535px;border-radius:38px;background:radial-gradient(circle at 75% 18%,rgba(199,255,61,.30),transparent 25%),linear-gradient(145deg,#fff,#f7f9f2)}
+    .search-art:before{background:linear-gradient(135deg,rgba(199,255,61,.17),transparent 42%),radial-gradient(circle at 20% 85%,rgba(16,22,28,.045),transparent 28%)}
+    .orb{width:285px;height:285px;opacity:.55;filter:blur(2px)}
+    .search-box{top:14%;height:68px;border-radius:20px}
+    .rank{top:38%;padding:23px;width:47%;border-radius:22px}
+    .ai{top:47%;width:40%;padding:19px;border-radius:22px}
+    .chart{height:135px;bottom:7%;gap:10px}
+    .stats{padding-bottom:95px}
+    .stats-grid{background:rgba(255,255,255,.48);border-radius:22px;overflow:hidden;box-shadow:0 12px 35px rgba(16,22,28,.035)}
+    .stat{padding:28px 24px}
+    .stat strong{font-size:2.15rem}
+    .stat span{display:block;line-height:1.45;margin-top:4px}
+    section{padding:112px 0}
+    .section-head{margin-bottom:52px}
+    .kicker{display:inline-flex;align-items:center;gap:8px}
+    .kicker:before{content:"";width:24px;height:2px;background:var(--lime);display:inline-block}
+    .card,.skill-group,.cert,.edu-card,.brand-card{box-shadow:0 8px 30px rgba(16,22,28,.025)}
+    .card{min-height:235px}
+    .card:hover,.project:hover{border-color:#cbd3c7}
+    .project{box-shadow:0 15px 45px rgba(0,0,0,.12)}
+    .contact{position:relative;overflow:hidden}
+    .contact:before{content:"";position:absolute;width:380px;height:380px;border-radius:50%;right:-150px;top:-170px;border:1px solid rgba(16,22,28,.12);box-shadow:0 0 0 45px rgba(16,22,28,.025),0 0 0 90px rgba(16,22,28,.018)}
+    footer{border-top:1px solid #252d33}
+    .reveal{transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+    @media(max-width:900px){.hero{padding:75px 0 70px}.brand:after{display:none}.search-art{min-height:460px}}
+    @media(max-width:600px){.hero{padding:58px 0 55px}h1{font-size:3.15rem}.search-art{min-height:380px;border-radius:28px}.stats-grid{border-radius:18px}section{padding:82px 0}}
+
+    @media(max-width:900px){.links{display:none}.menu{display:block}.nav-cta{display:none}.hero-grid,.about-grid,.project-grid{grid-template-columns:1fr}.hero{padding-top:65px}.search-art{min-height:420px}.cards{grid-template-columns:repeat(2,1fr)}.stats-grid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.pillars{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:600px){.wrap{width:min(var(--max),calc(100% - 28px))}section{padding:75px 0}.hero{padding:50px 0}.hero-grid{gap:45px}h1{font-size:3.3rem}.search-art{min-height:360px}.rank{width:50%}.ai{width:42%}.stats-grid,.cards,.skills-grid,.cert-grid,.edu,.brand-grid,.pillars{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}.section-head{display:block}.section-head p{margin-top:18px}.foot{display:block}.social{margin-top:16px;flex-wrap:wrap}.timeline-item{padding-left:28px}}
+  </style>
 </head>
 <body>
-<header class="nav"><div class="wrap navin"><a class="brand" href="../index.html">Prateek Sharma<i></i><small>DIGITAL MARKETING</small></a><nav class="links"><a href="../index.html">Home</a><a href="../index.html#about">About</a><a href="../index.html#projects">Projects</a><a href="./">Blog</a><a href="../contact.html">Contact</a></nav><a class="cta" href="../contact.html">Let's Work Together</a></div></header>
-<main>
-<section class="hero"><div class="wrap grid"><div><div class="eyebrow">SEO • AEO • GEO • AI SEARCH</div><h1>Ideas that make <em>search work.</em></h1><p class="lead">Practical guides, experiments and insights around SEO, AEO, GEO, AI-powered search, content strategy and digital marketing.</p></div><div class="note">No fluff. No inflated claims. Just practical ideas, frameworks and lessons from building and experimenting in digital marketing.</div></div></section>
-<section class="filters"><div class="wrap"><div class="filterbar"><button class="filter active" data-cat="All">All</button><button class="filter" data-cat="SEO">SEO</button><button class="filter" data-cat="AEO">AEO</button><button class="filter" data-cat="GEO">GEO</button><button class="filter" data-cat="AI Search">AI Search</button><button class="filter" data-cat="Content Marketing">Content</button><button class="filter" data-cat="Digital Marketing">Digital Marketing</button><button class="filter" data-cat="Google Ads">Google Ads</button></div></div></section>
-<section><div class="wrap"><div id="posts" class="posts"><div class="state"><strong>Loading articles...</strong><p>Fetching posts from the content library.</p></div></div></div></section>
-<section class="bottom"><h2>Have a search or growth challenge?</h2><p>Let's talk about SEO, content, search visibility or your next digital marketing project.</p><a href="../contact.html">Let's Work Together →</a></section>
-</main>
-<footer><div class="wrap foot"><div><strong>Prateek Sharma</strong><br><small>Digital Marketer | SEO | AEO | GEO | AI-Powered Search</small></div><div class="social"><a href="../index.html">Portfolio</a><a href="https://www.linkedin.com/in/prateek-sharma-bb6683196/" target="_blank">LinkedIn</a><a href="https://prateeksdigitalhub.wordpress.com/" target="_blank">WordPress</a><span>© 2026</span></div></div></footer>
-<script>
-const API="https://api.github.com/repos/prateeksportfolio/prateeksportfolio/contents/content/blog",box=document.getElementById("posts");let all=[];
-function fm(t){const m=t.match(/^---\s*([\s\S]*?)\s*---/),d={};if(!m)return d;m[1].split("\n").forEach(x=>{const i=x.indexOf(":");if(i<0)return;d[x.slice(0,i).trim()]=x.slice(i+1).trim().replace(/^["']|["']$/g,"")});return d}
-function date(x){const d=new Date(x);return isNaN(d)?"":d.toLocaleDateString("en-IN",{day:"numeric",month:"short",year:"numeric"})}
-function esc(x=""){return x.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]))}
-function render(a){box.innerHTML="";if(!a.length){box.innerHTML='<div class="state"><strong>No articles in this category yet.</strong><p>Publish a post from the Content Manager and it will appear here.</p></div>';return}a.forEach(p=>{const e=document.createElement("article");e.className="post";e.innerHTML=`<div class="pic"><span class="cat">${esc(p.category||"Digital Marketing")}</span></div><div class="body"><div class="date">${date(p.date)}</div><h2>${esc(p.title||"Untitled")}</h2><p class="excerpt">${esc(p.excerpt||"Explore this practical digital marketing guide.")}</p><a class="read" href="post.html?slug=${encodeURIComponent(p.slug||"")}">Read article →</a></div>`;box.appendChild(e)})}
-async function load(){try{const r=await fetch(API);if(!r.ok)throw 0;const f=await r.json();const m=f.filter(x=>x.type==="file"&&x.name.endsWith(".md"));all=(await Promise.all(m.map(async x=>{const t=await (await fetch(x.download_url)).text(),d=fm(t);return {...d,slug:d.slug||x.name.replace(".md","")}}))).sort((a,b)=>new Date(b.date||0)-new Date(a.date||0));render(all)}catch(e){box.innerHTML='<div class="state"><strong>Your blog is ready for its first article.</strong><p>Publish your first post from the Content Manager and it will appear here automatically.</p></div>'}}
-document.querySelectorAll(".filter").forEach(b=>b.onclick=()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");const c=b.dataset.cat;render(c==="All"?all:all.filter(x=>(x.category||"").toLowerCase()===c.toLowerCase()))});load();
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#home">Prateek Sharma<span></span></a>
+      <nav class="links" aria-label="Primary navigation">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+        <a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="contact.html">Let's Work Together</a>
+      <button class="menu" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="wrap hero-grid">
+        <div class="reveal">
+          <div class="eyebrow">DIGITAL MARKETING • SEO • AI SEARCH</div>
+          <h1>I Build <em>Search Visibility</em> That Drives Digital Growth.</h1>
+          <p class="lead">Digital marketer focused on SEO, AEO, GEO, AI-powered search, content strategy, and performance-driven marketing.</p>
+          <div class="actions">
+            <a class="btn primary" href="#projects">View My Work</a>
+            <a class="btn secondary" href="contact.html">Let's Connect</a>
+          </div>
+          <div class="status"><span class="dot"></span> Open to Digital Marketing Opportunities</div>
+          <div class="scroll-cue">Scroll to explore <span>↓</span></div>
+        </div>
+        <div class="search-art reveal" aria-label="Abstract search, SEO, AI and analytics visual">
+          <div class="orb"></div>
+          <div class="search-box"><span class="search-icon"></span><span class="search-text"><b>search visibility</b> + AI discovery</span></div>
+          <div class="rank"><small>SEARCH SIGNAL</small><strong>#01</strong><div class="rank-bar"><i></i></div></div>
+          <div class="ai"><b>AI / AEO</b><p>Answer-driven discovery signals mapped to user intent.</p></div>
+          <div class="chart"><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="wrap stats-grid">
+        <div class="stat"><strong>9.58</strong><span>CGPA · MBA — Digital Marketing</span></div>
+        <div class="stat"><strong>28+</strong><span>Client Accounts Audited</span></div>
+        <div class="stat"><strong>2</strong><span>Search Advertising Certifications</span></div>
+        <div class="stat"><strong>SEO · AEO · GEO</strong><span>Core Search Specializations</span></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="kicker">01 — ABOUT</div><h2>A Digital Marketer Built Around Search, Data & Growth</h2></div></div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>I'm Prateek Sharma, a Digital Marketing Professional and SEO Practitioner developing practical expertise across search, content, advertising, analytics, and emerging AI-powered discovery.</p>
+            <p>I'm pursuing an MBA in Digital Marketing at JECRC University, Jaipur, with a current CGPA of 9.58, after completing a BBA from SPCGCA, Ajmer with 73.27%.</p>
+            <p>My approach combines analytical thinking, problem solving, experimentation, and continuous learning across SEO, Search Advertising, AEO, GEO, AI-powered search, content marketing, analytics, and digital strategy.</p>
+          </div>
+          <div class="about-card reveal"><div class="big">9.58</div><p>Current MBA CGPA — a credibility signal, not the definition of the work. The portfolio prioritizes practical execution and proof.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="expertise">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="kicker">02 — WHAT I DO</div><h2>Search expertise with a growth mindset.</h2></div><p>Six practical capabilities spanning discovery, content, paid search, and measurement.</p></div>
+        <div class="cards">
+          <article class="card reveal"><span class="num">01</span><h3>SEO</h3><p>On-page SEO, technical SEO fundamentals, keyword research, content optimization, search visibility, and website performance.</p></article>
+          <article class="card reveal"><span class="num">02</span><h3>AEO</h3><p>Optimizing content for answer-driven search experiences and AI-assisted discovery.</p></article>
+          <article class="card reveal"><span class="num">03</span><h3>GEO</h3><p>Understanding how brands and content can become more visible within generative and AI-powered search experiences.</p></article>
+          <article class="card reveal"><span class="num">04</span><h3>Content Strategy</h3><p>Search-focused content structures designed around user intent, topical relevance, and discoverability.</p></article>
+          <article class="card reveal"><span class="num">05</span><h3>Search Advertising</h3><p>Google Ads Search and Microsoft Advertising Search campaign fundamentals, optimization, targeting, and performance measurement.</p></article>
+          <article class="card reveal"><span class="num">06</span><h3>Analytics & Insights</h3><p>Google Search Console, Microsoft Clarity, performance analysis, conversion-funnel thinking, and data-driven decision making.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="kicker">03 — SKILLS</div><h2>Capabilities, not inflated percentages.</h2></div></div>
+        <div class="skills-grid">
+          <div class="skill-group reveal"><h3>Search & SEO</h3><div class="tags"><span class="tag">SEO</span><span class="tag">On-Page SEO</span><span class="tag">Technical SEO</span><span class="tag">Keyword Research</span><span class="tag">Google Search Console</span><span class="tag">Microsoft Clarity</span><span class="tag">AEO</span><span class="tag">GEO</span></div></div>
+          <div class="skill-group reveal"><h3>Marketing</h3><div class="tags"><span class="tag">Digital Marketing</span><span class="tag">Search Advertising</span><span class="tag">Content Strategy</span><span class="tag">Lead Generation</span><span class="tag">Conversion Funnel Analysis</span></div></div>
+          <div class="skill-group reveal"><h3>Creative</h3><div class="tags"><span class="tag">Canva</span><span class="tag">Adobe Premiere Pro — Basic</span></div></div>
+          <div class="skill-group reveal"><h3>Professional</h3><div class="tags"><span class="tag">Problem Solving</span><span class="tag">Decision Making</span><span class="tag">Time Management</span><span class="tag">Quick Learning</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="kicker">04 — EXPERIENCE</div><h2>Professional experience that built operational strength.</h2></div></div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span class="meta">FEB 2023 — MAY 2023 · DELHI, INDIA</span>
+            <h3>HR Intern</h3><h4>Basics Of Immigration Consultant Services LLP</h4>
+            <ul><li>Supported recruitment, resume screening, and interview coordination.</li><li>Screened 800+ resumes as part of the recruitment process.</li></ul>
+            <p style="margin-top:14px;color:#64707a;font-size:.86rem">Built communication, process management, analytical screening, coordination, and decision-making skills.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="kicker">05 — FEATURED PROJECTS</div><h2>Proof of execution over generic project tiles.</h2></div><p>Case-study-led work across audits, owned content, community participation, and authority building.</p></div>
+        <div class="project-list">
+          <article class="project reveal"><div class="project-grid"><div><span class="project-num">PROJECT 01 · MAY 2026</span><h3>Enhancing Lead Generation Performance at DoodlePod Media</h3><p>Conducted a digital marketing audit for an agency managing 28+ client accounts.</p><ul><li>Audited the existing digital marketing ecosystem</li><li>Analyzed lead-generation performance</li><li>Mapped the complete conversion funnel</li><li>Identified potential revenue leakage points</li><li>Developed a data-driven lead-generation framework</li><li>Proposed a target of 5–10 qualified leads per month</li></ul></div><div class="funnel"><div class="funnel-step">Traffic</div><div class="funnel-step">Engagement</div><div class="funnel-step">Lead</div><div class="funnel-step">Qualification</div><div class="funnel-step">Conversion</div></div></div><a href="#contact">View Case Study →</a></article>
+          <article class="project reveal"><div class="project-grid"><div><span class="project-num">PROJECT 02 · PERSONAL</span><h3>Prateek's Digital Hub</h3><p>A personal WordPress-based digital marketing platform focused on SEO, Technical SEO, AEO, GEO, AI Marketing, search visibility, and digital marketing.</p><ul><li>WordPress</li><li>Blog publishing</li><li>SEO-focused content</li><li>Content organization</li><li>Search-focused topics</li><li>Personal brand building</li></ul><a href="https://prateeksdigitalhub.wordpress.com/" target="_blank" rel="noopener">Visit Website →</a></div><div class="about-card"><div class="big">WP</div><p>Owned publishing platform for hands-on search and content experimentation.</p></div></div></article>
+          <article class="project reveal"><div class="project-grid"><div><span class="project-num">PROJECT 03 · ONGOING</span><h3>Reddit Community & Search Visibility</h3><p>Community participation and authority-building project.</p><ul><li>Relevant digital marketing discussions</li><li>SEO-focused knowledge sharing</li><li>Search and AI marketing discussions</li><li>Community-based content distribution</li><li>Personal brand visibility</li></ul><a href="https://www.reddit.com/user/PrateeksDigitalHub/" target="_blank" rel="noopener">View Reddit Profile →</a></div><div class="about-card"><div class="big">R/</div><p>Knowledge sharing and community participation without invented traffic, backlink, ranking, or conversion claims.</p></div></div></article>
+          <article class="project reveal"><div class="project-grid"><div><span class="project-num">PROJECT 04 · ONGOING</span><h3>Quora Knowledge & Authority Building</h3><p>A knowledge-sharing and authority-building platform for digital marketing topics.</p><a href="https://www.quora.com/profile/Prateek-Sharma-2837" target="_blank" rel="noopener">View Quora Profile →</a></div><div class="about-card"><div class="big">Q</div><p>Digital marketing knowledge and authority building through useful answers.</p></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">06 — SEARCH PERFORMANCE SNAPSHOT</div>
+            <h2>Real search data from an earlier publishing project.</h2>
+          </div>
+          <p>Historical Google Search Console data from the WordPress publishing platform. These figures are presented as past performance, not current website traffic.</p>
+        </div>
+        <div class="proof-grid">
+          <div class="proof-intro reveal">
+            <span class="verified">HISTORICAL DATA · GOOGLE SEARCH CONSOLE</span>
+            <h3>Prateek's Digital Hub</h3>
+            <p>During the site's previous publishing period, the platform generated measurable organic-search visibility and appeared in Google's Generative AI features.</p>
+            <a href="https://prateeksdigitalhub.wordpress.com/" target="_blank" rel="noopener">View publishing platform →</a>
+          </div>
+          <div class="proof-stats reveal">
+            <div><strong>692</strong><span>Search impressions</span></div>
+            <div><strong>14</strong><span>Organic clicks</span></div>
+            <div><strong>2%</strong><span>Average CTR</span></div>
+            <div><strong>51</strong><span>Average position</span></div>
+            <div><strong>5</strong><span>Generative AI impressions</span></div>
+            <div><strong>22</strong><span>Indexed pages</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="kicker">07 — CERTIFICATIONS</div><h2>Search advertising foundations, formally validated.</h2></div></div>
+        <div class="cert-grid">
+          <article class="cert reveal"><span class="verified">VERIFIED CERTIFICATION</span><h3>Google Ads Search Certification</h3><p><strong>Google Skillshop</strong> · May 2026</p><p>Developed expertise in creating, managing, and optimizing search campaigns to drive business results.</p></article>
+          <article class="cert reveal"><span class="verified">VERIFIED CERTIFICATION</span><h3>Microsoft Advertising Search Certification</h3><p><strong>Microsoft Advertising Academy</strong> · May 2026</p><p>Gained hands-on knowledge of search advertising, campaign optimization, audience targeting, and performance measurement.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="kicker">08 — EDUCATION</div><h2>Academic foundation, kept secondary to practical work.</h2></div></div>
+        <div class="edu">
+          <div class="edu-card reveal"><span class="year">2027</span><strong>MBA — Digital Marketing</strong><p>JECRC University, Jaipur</p><p style="margin-top:8px;color:#64707a">CGPA: 9.58</p></div>
+          <div class="edu-card reveal"><span class="year">2024</span><strong>BBA</strong><p>SPCGCA, Ajmer</p><p style="margin-top:8px;color:#64707a">73.27%</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="kicker">09 — WHY WORK WITH ME</div><h2>More Than Just Marketing. I Think in Systems.</h2></div></div>
+        <div class="pillars">
+          <div class="pillar reveal"><h3>Search First</h3><p>I focus on how users discover information across search engines and emerging AI-driven search experiences.</p></div>
+          <div class="pillar reveal"><h3>Data Driven</h3><p>I use analytics, research, and performance signals to guide marketing decisions.</p></div>
+          <div class="pillar reveal"><h3>Practical Execution</h3><p>Strategy becomes valuable only when it can be implemented and measured.</p></div>
+          <div class="pillar reveal"><h3>Always Learning</h3><p>Digital marketing evolves quickly, so I continuously explore SEO, AI, AEO, GEO, and emerging search behavior.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brand-section">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="kicker">10 — BUILDING IN PUBLIC</div><h2>I Don't Just Study Digital Marketing. I Build in Public.</h2></div></div>
+        <div class="brand-grid">
+          <article class="brand-card reveal"><span class="kicker">OWNED PLATFORM</span><h3>Prateek's Digital Hub</h3><p>SEO + AEO + GEO + AI Marketing content</p><a style="display:inline-block;margin-top:18px;font-weight:800;font-size:.8rem" href="https://prateeksdigitalhub.wordpress.com/" target="_blank" rel="noopener">Explore →</a></article>
+          <article class="brand-card reveal"><span class="kicker">COMMUNITY</span><h3>Reddit</h3><p>Community discussions and knowledge sharing</p><a style="display:inline-block;margin-top:18px;font-weight:800;font-size:.8rem" href="https://www.reddit.com/user/PrateeksDigitalHub/" target="_blank" rel="noopener">Explore →</a></article>
+          <article class="brand-card reveal"><span class="kicker">KNOWLEDGE</span><h3>Quora</h3><p>Digital marketing knowledge and authority building</p><a style="display:inline-block;margin-top:18px;font-weight:800;font-size:.8rem" href="https://www.quora.com/profile/Prateek-Sharma-2837" target="_blank" rel="noopener">Explore →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap reveal">
+        <div class="kicker">11 — CONTACT</div>
+        <h2>Have a Digital Growth Challenge? Let's Talk.</h2>
+        <p>Whether you're looking for SEO support, digital marketing strategy, search visibility, or someone who understands the changing landscape of AI-powered search, let's connect.</p>
+        <div class="actions"><a class="btn primary" href="contact.html">Let's Work Together</a><a class="btn secondary" href="https://www.linkedin.com/in/prateek-sharma-bb6683196/" target="_blank" rel="noopener">LinkedIn</a></div>
+        <div style="margin-top:28px;font-size:.86rem"><a href="mailto:prateeksdigitalhub@gmail.com">prateeksdigitalhub@gmail.com</a> · <a href="https://www.linkedin.com/in/prateek-sharma-bb6683196/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://www.reddit.com/user/PrateeksDigitalHub/" target="_blank" rel="noopener">Reddit</a> · <a href="https://www.quora.com/profile/Prateek-Sharma-2837" target="_blank" rel="noopener">Quora</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div><strong>Prateek Sharma</strong><br><small>Digital Marketer | SEO | AEO | GEO | AI-Powered Search</small></div>
+      <div class="social"><a href="mailto:prateeksdigitalhub@gmail.com">Email</a><a href="https://www.linkedin.com/in/prateek-sharma-bb6683196/" target="_blank">LinkedIn</a><a href="https://prateeksdigitalhub.wordpress.com/" target="_blank">WordPress</a><span>© 2026</span></div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('show'); });
+    }, {threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    const navLinks = [...document.querySelectorAll('.links a')];
+    const sections = navLinks.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+    const navObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#'+entry.target.id));
+        }
+      });
+    }, {rootMargin:'-35% 0px -55% 0px'});
+    sections.forEach(s => navObserver.observe(s));
+
+    document.querySelector('.menu').addEventListener('click', () => {
+      const nav = document.querySelector('.links');
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+      nav.style.position='absolute'; nav.style.top='74px'; nav.style.left='0'; nav.style.right='0';
+      nav.style.padding='20px'; nav.style.background='rgba(248,249,244,.98)'; nav.style.flexDirection='column';
+      nav.style.borderBottom='1px solid var(--line)';
+    });
+  </script>
+  <script>
+  if (window.location.hash.startsWith('#recovery_token=')) {
+    window.location.replace('/admin/' + window.location.hash);
+  }
 </script>
 </body>
 </html>
