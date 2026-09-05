@@ -18,12 +18,128 @@
 <section class="bottom"><h2>Want to improve your search visibility?</h2><p>Let's talk about SEO, content strategy, AI-powered search or your next digital marketing project.</p><a href="../contact.html">Let's Work Together →</a></section></main>
 <footer><div class="foot"><div><strong>Prateek Sharma</strong><br><small>Digital Marketer | SEO | AEO | GEO | AI-Powered Search</small></div><div class="social"><a href="../index.html">Portfolio</a><a href="https://www.linkedin.com/in/prateek-sharma-bb6683196/" target="_blank">LinkedIn</a><a href="https://prateeksdigitalhub.wordpress.com/" target="_blank">WordPress</a><span>© 2026</span></div></div></footer>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
 <script>
-const slug=new URLSearchParams(location.search).get("slug"),API="https://api.github.com/repos/prateeksportfolio/prateeksportfolio/contents/content/blog";
-function fm(t){const m=t.match(/^---\s*([\s\S]*?)\s*---/),d={};if(!m)return{d,body:t};m[1].split("\n").forEach(x=>{const i=x.indexOf(":");if(i<0)return;d[x.slice(0,i).trim()]=x.slice(i+1).trim().replace(/^["']|["']$/g,"")});return{d,body:t.slice(m[0].length)}}
-function date(x){const d=new Date(x);return isNaN(d)?"":d.toLocaleDateString("en-IN",{day:"numeric",month:"long",year:"numeric"})}
-async function load(){try{if(!slug)throw 0;const r=await fetch(API);if(!r.ok)throw 0;const f=await r.json(),file=f.find(x=>x.name===slug+".md");if(!file)throw 0;const t=await(await fetch(file.download_url)).text(),p=fm(t),d=p.d,title=d.title||"Untitled Article",desc=d.meta_description||d.excerpt||"";document.title=title+" | Prateek Sharma";document.querySelector('meta[name="description"]').content=desc;document.querySelector('meta[property="og:title"]').content=title;document.querySelector('meta[property="og:description"]').content=desc;document.getElementById("title").textContent=title;document.getElementById("excerpt").textContent=d.excerpt||"";document.getElementById("cat").textContent=d.category||"Digital Marketing";document.getElementById("author").textContent=d.author||"Prateek Sharma";document.getElementById("date").textContent=date(d.date);if(d.featured_image){const im=document.getElementById("image");im.src=d.featured_image;im.alt=title;document.getElementById("featured").classList.add("has")}document.getElementById("body").innerHTML=marked.parse(p.body)}catch(e){document.title="Article Not Found | Prateek Sharma";document.getElementById("title").textContent="Article not found";document.getElementById("excerpt").textContent="The article could not be loaded.";document.getElementById("body").innerHTML="<p>Please return to the blog and choose another article.</p>")}}
-load();
+const slug = new URLSearchParams(location.search).get("slug");
+
+async function loadArticle() {
+  try {
+    if (!slug) throw new Error("No article slug");
+
+    const articleURL =
+      "https://raw.githubusercontent.com/prateeksportfolio/prateeksportfolio/main/content/blog/"
+      + slug
+      + ".md";
+
+    const response = await fetch(articleURL);
+
+    if (!response.ok) {
+      throw new Error("Article file not found: " + response.status);
+    }
+
+    const markdown = await response.text();
+
+    const match = markdown.match(/^---\s*([\s\S]*?)\s*---/);
+
+    if (!match) {
+      throw new Error("Frontmatter not found");
+    }
+
+    const frontmatter = match[1];
+    const body = markdown.slice(match[0].length);
+
+    function getValue(key) {
+      const regex = new RegExp(
+        "^" + key + ":\\s*[\"']?(.*?)[\"']?$",
+        "m"
+      );
+
+      const result = frontmatter.match(regex);
+
+      return result ? result[1].trim() : "";
+    }
+
+    const title =
+      getValue("title") || "Untitled Article";
+
+    const excerpt =
+      getValue("excerpt") || "";
+
+    const category =
+      getValue("category") || "Digital Marketing";
+
+    const author =
+      getValue("author") || "Prateek Sharma";
+
+    const dateValue =
+      getValue("date");
+
+    const seoTitle =
+      getValue("seo_title") || title;
+
+    const metaDescription =
+      getValue("meta_description") || excerpt;
+
+    document.title =
+      seoTitle + " | Prateek Sharma";
+
+    document.querySelector(
+      'meta[name="description"]'
+    ).content = metaDescription;
+
+    document.querySelector(
+      'meta[property="og:title"]'
+    ).content = title;
+
+    document.querySelector(
+      'meta[property="og:description"]'
+    ).content = metaDescription;
+
+    document.getElementById("title").textContent =
+      title;
+
+    document.getElementById("excerpt").textContent =
+      excerpt;
+
+    document.getElementById("cat").textContent =
+      category;
+
+    document.getElementById("author").textContent =
+      author;
+
+    if (dateValue) {
+      const date = new Date(dateValue);
+
+      document.getElementById("date").textContent =
+        date.toLocaleDateString("en-IN", {
+          day: "numeric",
+          month: "long",
+          year: "numeric"
+        });
+    }
+
+    document.getElementById("body").innerHTML =
+      marked.parse(body);
+
+  } catch (error) {
+
+    console.error("Article loading error:", error);
+
+    document.title =
+      "Article Not Found | Prateek Sharma";
+
+    document.getElementById("title").textContent =
+      "Article could not be loaded";
+
+    document.getElementById("excerpt").textContent =
+      "Please return to the blog and try again.";
+
+    document.getElementById("body").innerHTML =
+      "<p>We couldn't load this article right now.</p>";
+  }
+}
+
+loadArticle();
 </script>
 </body>
 </html>
